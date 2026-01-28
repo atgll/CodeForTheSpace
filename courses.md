@@ -1,6 +1,6 @@
 <div style="position:relative; height:150px;">
   <img 
-    src="../assets/images/pexels-markusspiske-965345.jpg"
+    src="./assets/images/pexels-markusspiske-965345.jpg"
     style="
       position:absolute;
       inset:0;
