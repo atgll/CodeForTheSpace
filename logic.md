@@ -32,7 +32,7 @@ Este documento describe cómo funciona el control de acceso a los vídeos de la 
 
 5. **Si está autorizado:**
 
-    - Se genera una URL firmada y temporal
+    - **Se genera una URL firmada y temporal**
 
 6. **El reproductor carga el vídeo**
 
@@ -55,3 +55,38 @@ Este documento describe cómo funciona el control de acceso a los vídeos de la 
 - El curso está activo
 
 - El vídeo pertenece a ese curso
+
+## 🗄️ Modelo de Datos Simplificado
+**Usuarios**
+
+- id
+
+- email
+
+- role
+
+**Cursos**
+
+- id
+
+- título
+
+- estado (activo / borrador)
+
+**Lecciones**
+
+- id
+
+- curso_id
+
+- orden
+
+- video_key
+
+**Accesos**
+
+- user_id
+
+- curso_id
+
+- expires_at (opcional)
