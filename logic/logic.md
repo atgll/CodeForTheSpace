@@ -32,8 +32,61 @@ Este documento describe cómo funciona el control de acceso a los vídeos de la 
 
 5. **Si está autorizado:**
 
-    - Se genera una URL firmada y temporal
+    - **Se genera una URL firmada y temporal**
 
 6. **El reproductor carga el vídeo**
 
 7. **El acceso expira automáticamente**
+
+## 🧑‍🎓 Reglas de Autorización
+
+- Un usuario puede ver un vídeo si:
+
+- Está autenticado
+
+- Tiene acceso al curso
+
+- El curso está:
+
+    - comprado
+
+    - o incluido en su suscripción
+
+- El curso está activo
+
+- El vídeo pertenece a ese curso
+
+## 🗄️ Modelo de Datos Simplificado
+**Usuarios**
+
+- id
+
+- email
+
+- role
+
+**Cursos**
+
+- id
+
+- título
+
+- estado (activo / borrador)
+
+**Lecciones**
+
+- id
+
+- curso_id
+
+- orden
+
+- video_key
+
+**Accesos**
+
+- user_id
+
+- curso_id
+
+- expires_at (opcional)
