@@ -37,3 +37,21 @@ Este documento describe cómo funciona el control de acceso a los vídeos de la 
 6. **El reproductor carga el vídeo**
 
 7. **El acceso expira automáticamente**
+
+## 🧑‍🎓 Reglas de Autorización
+
+- Un usuario puede ver un vídeo si:
+
+- Está autenticado
+
+- Tiene acceso al curso
+
+- El curso está:
+
+    - comprado
+
+    - o incluido en su suscripción
+
+- El curso está activo
+
+- El vídeo pertenece a ese curso
