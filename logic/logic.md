@@ -32,7 +32,7 @@ Este documento describe cómo funciona el control de acceso a los vídeos de la 
 
 5. **Si está autorizado:**
 
-    - Se genera una URL firmada y temporal
+    - **Se genera una URL firmada y temporal**
 
 6. **El reproductor carga el vídeo**
 
